@@ -8,6 +8,6 @@ COPY run.py /app
 
 WORKDIR /app
 
-RUN apt install -y chromium-chromedriver && pip install -r requirements.txt
+RUN apk add -y chromium-chromedriver && pip install -r requirements.txt
 
 CMD ["python", "run.py"]
