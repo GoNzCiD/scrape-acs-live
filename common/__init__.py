@@ -2,7 +2,7 @@ import os
 
 # General
 TIMER = int(os.getenv("TIMER", "30"))
-OUTPUT_METHOD = "dropbox"  # values: dropbox, file_system
+OUTPUT_METHOD = os.getenv("OUTPUT_METHOD", "dropbox")  # values: dropbox, file_system
 
 # Scrapper
 SERVER_URL = os.getenv("SERVER_URL")
