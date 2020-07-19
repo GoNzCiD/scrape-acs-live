@@ -68,6 +68,7 @@ class AssettoServerBrowser:
         options = Options()
         options.headless = True
         options.add_argument("--window-size=1920,1200")
+        options.add_argument("--no-sandbox")
         if sys.platform == 'win32':
             return webdriver.Chrome(executable_path=WINDOWS_CHROME_DRIVER_PATH, options=options)
         return webdriver.Chrome(options=options)
